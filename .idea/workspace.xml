@@ -5,26 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HomePage/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/About.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Resume.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/SomeNumbers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/ContactButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/EmailAndLocation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/ProfilePicture.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Reserved.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/constants/queries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/utils/http/Axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/utils/http/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/useQueryUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/userService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +36,8 @@
         <option value="HomeContainer" />
         <option value="CSS File" />
         <option value="Vue Single File Component" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -70,6 +69,7 @@
     "WebServerToolWindowFactoryState": "false",
     "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/gabriel.manfroi/gabriel/gabrielmanfroi/front",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -86,7 +86,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/core" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/containers" />
@@ -102,11 +106,15 @@
       <option name="presentableId" value="Default" />
       <updated>1690833467278</updated>
       <workItem from="1690833470095" duration="2421000" />
-      <workItem from="1690836079461" duration="11713000" />
+      <workItem from="1690836079461" duration="12748000" />
+      <workItem from="1690910956938" duration="4719000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
 </project>
