@@ -46,10 +46,11 @@ export const About = () => {
         fontWeight={400}
       >
         Since beginning my journey as a freelance designer nearly 8 years ago,
-        I've done remote work for agencies, consulted for startups, and
+        I&apos;ve done remote work for agencies, consulted for startups, and
         collaborated with talented people to create digital products for both
-        business and consumer use. I'm quietly confident, naturally curious, and
-        perpetually working on improving my chopsone design problem at a time.
+        business and consumer use. I&apos;m quietly confident, naturally
+        curious, and perpetually working on improving my chopsone design problem
+        at a time.
       </Typography>
     </Stack>
   );

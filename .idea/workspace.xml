@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/ContactButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/EmailAndLocation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/ProfilePicture.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Reserved.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/constants/queries.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/utils/http/Axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/utils/http/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/queries/useQueryUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/userService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/About.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +89,7 @@
       <updated>1690833467278</updated>
       <workItem from="1690833470095" duration="2421000" />
       <workItem from="1690836079461" duration="12748000" />
-      <workItem from="1690910956938" duration="4719000" />
+      <workItem from="1690910956938" duration="5770000" />
     </task>
     <servers />
   </component>
