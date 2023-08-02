@@ -1,50 +1,30 @@
-import { Grid, Stack } from '@mui/material';
-import { GitHub, Instagram, Language, LinkedIn } from '@mui/icons-material';
+import { Grid } from '@mui/material';
+import { GitHub, Language, LinkedIn, Twitter } from '@mui/icons-material';
 import React from 'react';
+import { useQuerySocialNetworks } from '@/hooks/queries/useQuerySocialNetworks';
+import { SocialNetworksItem } from '@/components/LeftSideBar/SocialNetworks.item';
+
+const ICON_BY_CATEGORY = {
+  github: GitHub,
+  linkedin: LinkedIn,
+  blog: Language,
+  twitter: Twitter,
+};
 
 export const SocialNetworks = () => {
-  return <Grid item>
-    <Stack direction={'row'} gap={1} justifyContent={'center'}>
-      <Stack
-        justifyContent={'center'}
-        alignItems={'center'}
-        height={50}
-        width={50}
-        borderRadius={'50%'}
-        border='2px solid #565656'
-      >
-        <LinkedIn style={{ color: '#999999' }} />
-      </Stack>
-      <Stack
-        justifyContent={'center'}
-        alignItems={'center'}
-        height={50}
-        width={50}
-        borderRadius={'50%'}
-        border='2px solid #565656'
-      >
-        <Instagram style={{ color: '#999999' }} />
-      </Stack>
-      <Stack
-        justifyContent={'center'}
-        alignItems={'center'}
-        height={50}
-        width={50}
-        borderRadius={'50%'}
-        border='2px solid #565656'
-      >
-        <Language style={{ color: '#999999' }} />
-      </Stack>
-      <Stack
-        justifyContent={'center'}
-        alignItems={'center'}
-        height={50}
-        width={50}
-        borderRadius={'50%'}
-        border='2px solid #565656'
-      >
-        <GitHub style={{ color: '#999999' }} />
-      </Stack>
-    </Stack>
-  </Grid>;
+  const { getSocialNetworksData, getSocialNetworkLoading } =
+    useQuerySocialNetworks();
+
+  if (getSocialNetworkLoading) return <></>;
+  return (
+    <Grid item container direction={'row'} justifyContent={'space-around'}>
+      {getSocialNetworksData.data.map((s) => (
+        <SocialNetworksItem
+          key={s.attributes.url}
+          url={s.attributes.url}
+          icon={ICON_BY_CATEGORY[s.attributes.category]}
+        />
+      ))}
+    </Grid>
+  );
 };

@@ -1,12 +1,16 @@
 import { Axios } from '@/core/utils/http';
 
 const userService = () => {
-  const getUserByName = async (name: string) => {
-    return Axios.get('/public-users');
+  const getUser = async () => {
+    return Axios.get('/gabriel-portfolio-users/1?populate=*');
   };
 
+  const getSocialNetworks = async () =>
+    Axios.get('/gabriel-portfolio-social-networks');
+
   return {
-    getUserByName,
+    getUser,
+    getSocialNetworks,
   };
 };
 
