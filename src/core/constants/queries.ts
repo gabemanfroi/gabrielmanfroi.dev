@@ -1,5 +1,6 @@
 export const QUERIES = {
   USERS: {
-    GET_USER_BY_NAME: 'Query@GetUserByName',
+    GET_USER: 'Query@GetUser',
+    GET_SOCIAL_NETWORKS: 'Query@GetSocialNetworks',
   },
 };
