@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['wpriverthemes.com'],
+    domains: ['strapi.gabrielmanfroi.dev'],
   },
 };
 
