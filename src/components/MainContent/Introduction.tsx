@@ -6,7 +6,7 @@ import React from 'react';
 import { HomeOutlined } from '@mui/icons-material';
 import { useRefsContext } from '@/providers/refsProvider';
 
-export const Introduce = () => {
+export const Introduction = () => {
   const { portfolioRef, introductionRef } = useRefsContext();
   const handleScrollToPortfoliosSection = () => {
     portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });

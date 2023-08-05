@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import { useQuerySkill } from '@/hooks/queries/useQuerySkill';
-import { SkillsItemsItem } from '@/components/MainContent/Skills.items.item';
+import { SkillsItemsItem } from '@/components/MainContent/Skills/Skills.items.item';
 
 export const SkillsItems = () => {
   const { getSkillData, getSkillLoading } = useQuerySkill();

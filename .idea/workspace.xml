@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":hammer: adds right sidebar">
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Skills.items.item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Skills.items.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/types/Skill.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/queries/useQuerySkill.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/skillService.ts" afterDir="false" />
+    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":hammer: starts consuming skill api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/constants/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants/queries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Introduction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.items.item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.items.item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.items.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.items.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +81,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/MainContent/Skills" />
       <recent name="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks" />
       <recent name="$PROJECT_DIR$/src/components/MainContent/SomeNumbers" />
       <recent name="$PROJECT_DIR$/src/components/MainContent/Resume" />
       <recent name="$PROJECT_DIR$/src/components/MainContent/Portfolio" />
-      <recent name="$PROJECT_DIR$/src/core" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -105,7 +102,7 @@
       <workItem from="1691006197483" duration="8720000" />
       <workItem from="1691020025016" duration="2287000" />
       <workItem from="1691162684452" duration="14811000" />
-      <workItem from="1691233245319" duration="25797000" />
+      <workItem from="1691233245319" duration="26326000" />
     </task>
     <task id="LOCAL-00001" summary="🏗updates config files">
       <created>1691016279598</created>
@@ -212,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691275021393</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=":hammer: starts consuming skill api">
+      <created>1691277299371</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691277299371</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +248,7 @@
     <MESSAGE value=":iphone: fixes some responsiveness" />
     <MESSAGE value=":recycle: minor refactoring" />
     <MESSAGE value=":hammer: adds right sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value=":hammer: adds right sidebar" />
+    <MESSAGE value=":hammer: starts consuming skill api" />
+    <option name="LAST_COMMIT_MESSAGE" value=":hammer: starts consuming skill api" />
   </component>
 </project>

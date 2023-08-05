@@ -3,7 +3,7 @@ import { Code } from '@mui/icons-material';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
 import { colors } from '@/core/theme/colors';
 import { useRefsContext } from '@/providers/refsProvider';
-import { SkillsItems } from '@/components/MainContent/Skills.items';
+import { SkillsItems } from '@/components/MainContent/Skills/Skills.items';
 
 export const Skills = () => {
   const { skillsRef } = useRefsContext();
