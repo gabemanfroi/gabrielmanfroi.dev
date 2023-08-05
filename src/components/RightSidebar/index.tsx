@@ -2,7 +2,6 @@ import {
   Code,
   HomeOutlined,
   PersonOutlined,
-  RoomServiceOutlined,
   WorkOutline,
 } from '@mui/icons-material';
 import { Stack } from '@mui/material';
@@ -10,14 +9,8 @@ import { useRefsContext } from '@/providers/refsProvider';
 import { RightSidebarItem } from '@/components/RightSidebar/RightSidebar.item';
 
 export const RightSidebar = () => {
-  const {
-    aboutRef,
-    introductionRef,
-    portfolioRef,
-    resumeRef,
-    serviceRef,
-    skillsRef,
-  } = useRefsContext();
+  const { aboutRef, introductionRef, portfolioRef, resumeRef, skillsRef } =
+    useRefsContext();
 
   return (
     <Stack
@@ -38,7 +31,6 @@ export const RightSidebar = () => {
       <RightSidebarItem sectionRef={introductionRef} icon={HomeOutlined} />
       <RightSidebarItem sectionRef={aboutRef} icon={PersonOutlined} />
       <RightSidebarItem sectionRef={resumeRef} icon={WorkOutline} />
-      <RightSidebarItem sectionRef={serviceRef} icon={RoomServiceOutlined} />
       <RightSidebarItem sectionRef={skillsRef} icon={Code} />
       <RightSidebarItem sectionRef={portfolioRef} icon={PersonOutlined} />
     </Stack>

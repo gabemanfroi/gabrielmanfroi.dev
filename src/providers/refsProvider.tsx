@@ -16,7 +16,6 @@ interface RefsContext {
   resumeRef: MutableRefObject<any>;
   skillsRef: MutableRefObject<any>;
   portfolioRef: MutableRefObject<any>;
-  serviceRef: MutableRefObject<any>;
   activeSection: MutableRefObject<any> | null;
   setActiveSection: Dispatch<SetStateAction<MutableRefObject<any> | null>>;
   mainContentRef: MutableRefObject<any>;
@@ -34,7 +33,6 @@ export const RefsProvider = ({ children }: Props) => {
   const resumeRef = useRef<any>(null);
   const skillsRef = useRef<any>(null);
   const portfolioRef = useRef<any>(null);
-  const serviceRef = useRef<any>(null);
   const mainContentRef = useRef<any>(null);
 
   const [activeSection, setActiveSection] =
@@ -47,7 +45,6 @@ export const RefsProvider = ({ children }: Props) => {
       resumeRef,
       skillsRef,
       portfolioRef,
-      serviceRef,
       activeSection,
       setActiveSection,
       mainContentRef,
@@ -58,7 +55,6 @@ export const RefsProvider = ({ children }: Props) => {
       resumeRef,
       skillsRef,
       portfolioRef,
-      serviceRef,
       activeSection,
       mainContentRef,
       setActiveSection,

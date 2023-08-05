@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":hammer: starts consuming skill api">
+    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":recycle: removes unused section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Introduction.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.items.item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.items.item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.items.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.items.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/refsProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/refsProvider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +98,7 @@
       <workItem from="1691006197483" duration="8720000" />
       <workItem from="1691020025016" duration="2287000" />
       <workItem from="1691162684452" duration="14811000" />
-      <workItem from="1691233245319" duration="26326000" />
+      <workItem from="1691233245319" duration="26492000" />
     </task>
     <task id="LOCAL-00001" summary="🏗updates config files">
       <created>1691016279598</created>
@@ -216,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691277299371</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary=":recycle: removes unused section">
+      <created>1691277718656</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691277718656</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +252,7 @@
     <MESSAGE value=":recycle: minor refactoring" />
     <MESSAGE value=":hammer: adds right sidebar" />
     <MESSAGE value=":hammer: starts consuming skill api" />
-    <option name="LAST_COMMIT_MESSAGE" value=":hammer: starts consuming skill api" />
+    <MESSAGE value=":recycle: removes unused section" />
+    <option name="LAST_COMMIT_MESSAGE" value=":recycle: removes unused section" />
   </component>
 </project>
