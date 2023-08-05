@@ -29,7 +29,7 @@ export const PortfolioProjectsItem = ({ project, last }: Props) => {
       direction="column"
       gap={2}
       xs={12}
-      lg={6}
+      md={6}
       p={1}
       mb={last ? 0 : 6}
     >

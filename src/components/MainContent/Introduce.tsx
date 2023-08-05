@@ -2,10 +2,17 @@ import { Button, Grid, Typography } from '@mui/material';
 import { colors } from '@/core/theme/colors';
 import { SomeNumbers } from '@/components/MainContent/SomeNumbers';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
-import React from 'react';
+import React, { MutableRefObject } from 'react';
 import { HomeOutlined } from '@mui/icons-material';
 
-export const Introduce = () => {
+interface Props {
+  portfolioRef: MutableRefObject<any>;
+}
+
+export const Introduce = ({ portfolioRef }: Props) => {
+  const handleScrollToPortfoliosSection = () => {
+    portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <Grid item container justifyContent={'space-between'} gap={5}>
       <SectionHeader icon={HomeOutlined} title={'Introduction'}>
@@ -30,6 +37,7 @@ export const Introduce = () => {
         </Grid>
         <Grid item container xs={12} justifyContent={{ xs: 'flex-end' }}>
           <Button
+            onClick={handleScrollToPortfoliosSection}
             sx={{
               alignSelf: 'flex-end',
               borderRadius: 99999,

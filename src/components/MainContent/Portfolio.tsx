@@ -3,10 +3,15 @@ import { Stack, Typography } from '@mui/material';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
 import { colors } from '@/core/theme/colors';
 import { PortfolioProjects } from '@/components/MainContent/Portfolio.projects';
+import { MutableRefObject } from 'react';
 
-export const Portfolio = () => {
+interface Props {
+  portfolioRef: MutableRefObject<any>;
+}
+
+export const Portfolio = ({ portfolioRef }: Props) => {
   return (
-    <Stack gap={2}>
+    <Stack gap={2} ref={portfolioRef}>
       <SectionHeader icon={PersonOutlined} title={'portfolio'}>
         <Typography
           color={'white'}

@@ -11,15 +11,21 @@ export const HomePage = () => {
       gap={{ xs: 7, md: 13, xl: 30 }}
       height={'100%'}
       overflow={{ xs: 'scroll', lg: 'hidden' }}
+      position="relative"
     >
       <Grid
+        top={0}
+        left={0}
+        height={{ lg: '100%' }}
+        px={{ xs: 0, md: 3 }}
+        py={{ xs: 0, md: 4, lg: 12 }}
+        position={{ lg: 'absolute' }}
         item
         container
         pt={{ xs: 3, md: 0 }}
         xs={12}
-        lg={3}
-        xl={2.8}
-        height={{ lg: '100%' }}
+        lg={4.2}
+        xl={3}
       >
         <LeftSideBar />
       </Grid>
@@ -27,7 +33,8 @@ export const HomePage = () => {
         item
         container
         xs={12}
-        lg={5.5}
+        pl={{ lg: '40%' }}
+        pr={{ lg: '10%', xl: '15%' }}
         overflow={{
           lg: 'scroll',
         }}
