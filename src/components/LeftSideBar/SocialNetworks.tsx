@@ -17,7 +17,7 @@ export const SocialNetworks = () => {
 
   if (getSocialNetworkLoading) return <></>;
   return (
-    <Grid item container direction={'row'} justifyContent={'space-around'}>
+    <Grid item container direction={'row'} justifyContent={'center'} gap={1}>
       {getSocialNetworksData.data.map((s) => (
         <SocialNetworksItem
           key={s.attributes.url}

@@ -20,7 +20,7 @@ export const Header = () => {
           {getUserByNameData.data.attributes.name}
         </Typography>
       </Grid>
-      <Grid item xs={6} md={5}>
+      <Grid item xs={6} md={2}>
         <Typography color={'white'} fontSize={14} textAlign={'right'}>
           {getUserByNameData.data.attributes.role}
         </Typography>
