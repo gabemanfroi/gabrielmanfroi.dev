@@ -15,12 +15,12 @@ export const Header = () => {
       direction={'row'}
       justifyContent={'space-between'}
     >
-      <Grid item xs={6} md={7}>
+      <Grid item xs={6} xl={7}>
         <Typography color={'white'} fontSize={36}>
           {getUserByNameData.data.attributes.name}
         </Typography>
       </Grid>
-      <Grid item xs={6} md={2}>
+      <Grid item xs={6} md={2} lg={6} xl={5}>
         <Typography color={'white'} fontSize={14} textAlign={'right'}>
           {getUserByNameData.data.attributes.role}
         </Typography>

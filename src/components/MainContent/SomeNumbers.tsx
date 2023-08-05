@@ -3,7 +3,7 @@ import { SomeNumbersItem } from '@/components/MainContent/SomeNumbers.item';
 
 export const SomeNumbers = () => {
   return (
-    <Stack direction={'row'} gap={{ xs: 3, md: 10 }}>
+    <Stack direction={'row'} gap={{ xs: 3, md: 12 }}>
       <SomeNumbersItem moreThan={4} description={'Years of Experience'} />
       <SomeNumbersItem
         flex={1}

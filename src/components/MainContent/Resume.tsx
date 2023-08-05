@@ -7,7 +7,7 @@ import { ResumeTimeline } from '@/components/MainContent/Resume.timeline';
 export const Resume = () => {
   return (
     <Stack justifyContent={'space-between'}>
-      <SectionHeader icon={WorkOutline} title={'Resume'} width={120}>
+      <SectionHeader icon={WorkOutline} title={'Resume'}>
         <Typography
           color={'white'}
           variant={'h1'}

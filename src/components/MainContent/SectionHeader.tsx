@@ -12,14 +12,15 @@ interface Props {
 export const SectionHeader = ({ children, icon, title, width }: Props) => {
   const IconComponent = icon;
   return (
-    <Grid item container gap={5}>
+    <Grid item container gap={5} direction={'row'}>
       <Grid
         container
         item
+        xs={12}
         alignItems={'center'}
         justifyContent={'space-evenly'}
         direction={'row'}
-        maxWidth={width ?? { xs: '50%', md: '25%' }}
+        maxWidth={width ?? { xs: '50%', md: '20%' }}
         sx={{
           padding: '9px 20px',
           opacity: 1,
@@ -38,7 +39,9 @@ export const SectionHeader = ({ children, icon, title, width }: Props) => {
           {title}
         </Typography>
       </Grid>
-      {children}
+      <Grid item container xs={12}>
+        {children}
+      </Grid>
     </Grid>
   );
 };

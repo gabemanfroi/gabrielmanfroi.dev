@@ -5,7 +5,7 @@ import { SectionHeader } from '@/components/MainContent/SectionHeader';
 export const Services = () => {
   return (
     <Stack justifyContent={'space-between'} gap={4}>
-      <SectionHeader icon={RoomService} title={'Services'} width={120}>
+      <SectionHeader icon={RoomService} title={'Services'}>
         <Typography
           color={'white'}
           variant={'h1'}

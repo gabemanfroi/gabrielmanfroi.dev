@@ -6,7 +6,7 @@ import { colors } from '@/core/theme/colors';
 export const Skills = () => {
   return (
     <Stack justifyContent={'space-between'} gap={4}>
-      <SectionHeader title={'Skills'} width={120} icon={Code}>
+      <SectionHeader title={'Skills'} icon={Code}>
         <Typography
           color={'white'}
           variant={'h1'}

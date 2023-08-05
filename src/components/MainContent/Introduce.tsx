@@ -1,4 +1,4 @@
-import { Button, Grid, Stack, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { colors } from '@/core/theme/colors';
 import { SomeNumbers } from '@/components/MainContent/SomeNumbers';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
@@ -22,13 +22,16 @@ export const Introduce = () => {
         </Typography>
       </SectionHeader>
       <Grid item container gap={4}>
-        <Typography fontSize={{ xs: 16 }}>
-          I am a Full Stack Software Engineer passionated by Technology
-        </Typography>
-        <Stack flex={1} justifyContent={'center'}>
+        <Grid item container xs={8}>
+          <Typography fontSize={{ xs: 16 }}>
+            I am a Full Stack Software Engineer passionated by Technology and a
+            lifetime learner.
+          </Typography>
+        </Grid>
+        <Grid item container xs={12} justifyContent={{ xs: 'flex-end' }}>
           <Button
             sx={{
-              alignSelf: 'center',
+              alignSelf: 'flex-end',
               borderRadius: 99999,
               background: colors.primary,
               color: 'black',
@@ -39,7 +42,7 @@ export const Introduce = () => {
           >
             Check some of my projects
           </Button>
-        </Stack>
+        </Grid>
       </Grid>
       <SomeNumbers />
     </Grid>
