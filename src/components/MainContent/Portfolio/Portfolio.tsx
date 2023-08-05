@@ -2,14 +2,11 @@ import { PersonOutlined } from '@mui/icons-material';
 import { Stack, Typography } from '@mui/material';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
 import { colors } from '@/core/theme/colors';
-import { PortfolioProjects } from '@/components/MainContent/Portfolio.projects';
-import { MutableRefObject } from 'react';
+import { PortfolioProjects } from '@/components/MainContent/Portfolio/Portfolio.projects';
+import { useRefsContext } from '@/providers/refsProvider';
 
-interface Props {
-  portfolioRef: MutableRefObject<any>;
-}
-
-export const Portfolio = ({ portfolioRef }: Props) => {
+export const Portfolio = () => {
+  const { portfolioRef } = useRefsContext();
   return (
     <Stack gap={2} ref={portfolioRef}>
       <SectionHeader icon={PersonOutlined} title={'portfolio'}>

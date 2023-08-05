@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material';
-import { SomeNumbersItem } from '@/components/MainContent/SomeNumbers.item';
+import { SomeNumbersItem } from '@/components/MainContent/SomeNumbers/SomeNumbers.item';
 
 export const SomeNumbers = () => {
   return (

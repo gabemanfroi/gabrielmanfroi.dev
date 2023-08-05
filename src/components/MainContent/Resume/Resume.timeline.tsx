@@ -1,6 +1,6 @@
 import { Timeline, timelineItemClasses } from '@mui/lab';
 import { useQueryResumeItems } from '@/hooks/queries/useQueryResumeItems';
-import { ResumeTimelineItem } from '@/components/MainContent/Resume.timeline.item';
+import { ResumeTimelineItem } from '@/components/MainContent/Resume/Resume.timeline.item';
 
 export const ResumeTimeline = () => {
   const { getResumeItemsData, getResumeItemsDataLoading } =

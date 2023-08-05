@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 import { GitHub, Language, LinkedIn, Twitter } from '@mui/icons-material';
 import React from 'react';
 import { useQuerySocialNetworks } from '@/hooks/queries/useQuerySocialNetworks';
-import { SocialNetworksItem } from '@/components/LeftSideBar/SocialNetworks.item';
+import { SocialNetworksItem } from '@/components/LeftSideBar/SocialNetworks/SocialNetworks.item';
 
 const ICON_BY_CATEGORY = {
   github: GitHub,

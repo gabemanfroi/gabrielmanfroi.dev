@@ -19,10 +19,10 @@ export const SocialNetworksItem = ({
           sx={{
             border: `2px solid ${colors.gray.dark}`,
             color: '#999999',
+            transition: 'all ease-in-out 0.2s',
             '&:hover': {
               color: colors.primary,
               borderColor: colors.primary,
-              transition: 'all ease-in-out 0.2s',
             },
           }}
         >

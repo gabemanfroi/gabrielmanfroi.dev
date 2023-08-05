@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import { useQueryProjects } from '@/hooks/queries/useQueryProjects';
-import { PortfolioProjectsItem } from '@/components/MainContent/Portfolio.projects.item';
+import { PortfolioProjectsItem } from '@/components/MainContent/Portfolio/Portfolio.projects.item';
 
 export const PortfolioProjects = () => {
   const { getProjectsData, getProjectsLoading } = useQueryProjects();
