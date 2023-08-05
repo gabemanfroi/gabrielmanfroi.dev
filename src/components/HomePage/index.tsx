@@ -1,8 +1,14 @@
 import { Grid } from '@mui/material';
 import { LeftSideBar } from '@/components/LeftSideBar';
 import { MainContent } from '@/components/MainContent';
+import { RightSidebar } from '@/components/RightSidebar';
+import { useHandleScroll } from '@/hooks/useHandleScroll';
+import { useRefsContext } from '@/providers/refsProvider';
 
 export const HomePage = () => {
+  const { mainContentRef } = useRefsContext();
+
+  const handleScroll = useHandleScroll();
   return (
     <Grid
       container
@@ -30,6 +36,7 @@ export const HomePage = () => {
         <LeftSideBar />
       </Grid>
       <Grid
+        ref={mainContentRef}
         item
         container
         xs={12}
@@ -40,9 +47,11 @@ export const HomePage = () => {
         }}
         height={'100%'}
         px={{ xs: 2 }}
+        onScroll={handleScroll}
       >
         <MainContent />
       </Grid>
+      <RightSidebar />
     </Grid>
   );
 };

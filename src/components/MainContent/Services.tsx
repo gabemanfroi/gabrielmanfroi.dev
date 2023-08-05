@@ -1,10 +1,12 @@
 import { Stack, Typography } from '@mui/material';
 import { Code, RoomService } from '@mui/icons-material';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
+import { useRefsContext } from '@/providers/refsProvider';
 
 export const Services = () => {
+  const { serviceRef } = useRefsContext();
   return (
-    <Stack justifyContent={'space-between'} gap={4}>
+    <Stack justifyContent={'space-between'} gap={4} ref={serviceRef}>
       <SectionHeader icon={RoomService} title={'Services'}>
         <Typography
           color={'white'}

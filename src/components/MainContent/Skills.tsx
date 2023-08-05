@@ -2,10 +2,12 @@ import { Grid, Stack, Typography } from '@mui/material';
 import { Code, Javascript } from '@mui/icons-material';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
 import { colors } from '@/core/theme/colors';
+import { useRefsContext } from '@/providers/refsProvider';
 
 export const Skills = () => {
+  const { skillsRef } = useRefsContext();
   return (
-    <Stack justifyContent={'space-between'} gap={4}>
+    <Stack justifyContent={'space-between'} gap={4} ref={skillsRef}>
       <SectionHeader title={'Skills'} icon={Code}>
         <Typography
           color={'white'}

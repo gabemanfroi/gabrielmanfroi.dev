@@ -3,7 +3,7 @@ import React from 'react';
 import { Header } from '@/components/LeftSideBar/Header';
 import { ProfilePicture } from '@/components/LeftSideBar/ProfilePicture';
 import { EmailAndLocation } from '@/components/LeftSideBar/EmailAndLocation';
-import { SocialNetworks } from '@/components/LeftSideBar/SocialNetworks';
+import { SocialNetworks } from '@/components/LeftSideBar/SocialNetworks/SocialNetworks';
 import { ContactButton } from '@/components/LeftSideBar/ContactButton';
 import { Reserved } from '@/components/LeftSideBar/Reserved';
 
