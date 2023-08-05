@@ -1,20 +1,15 @@
-import { Stack, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
+import { SomeNumbersItem } from '@/components/MainContent/SomeNumbers.item';
 
 export const SomeNumbers = () => {
   return (
-    <Stack direction={'row'} gap={10}>
-      <Stack gap={5}>
-        <Typography variant={'h2'} lineHeight={'56px'} fontSize={76}>
-          4+
-        </Typography>
-        <Typography>Years of Experience</Typography>
-      </Stack>
-      <Stack gap={5}>
-        <Typography variant={'h2'} lineHeight={'56px'} fontSize={76}>
-          182+
-        </Typography>
-        <Typography>Projects Completed</Typography>
-      </Stack>
+    <Stack direction={'row'} gap={{ xs: 3, md: 10 }}>
+      <SomeNumbersItem moreThan={4} description={'Years of Experience'} />
+      <SomeNumbersItem
+        flex={1}
+        moreThan={182}
+        description={'Projects Completed'}
+      />
     </Stack>
   );
 };

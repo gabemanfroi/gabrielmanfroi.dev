@@ -1,45 +1,25 @@
 import { Stack, Typography } from '@mui/material';
 import { PersonOutlined } from '@mui/icons-material';
+import { SectionHeader } from '@/components/MainContent/SectionHeader';
 
 export const About = () => {
   return (
-    <Stack justifyContent={'space-between'}>
-      <Stack
-        alignItems={'center'}
-        justifyContent={'space-evenly'}
-        direction={'row'}
-        width={110}
-        sx={{
-          padding: '9px 20px',
-          opacity: 1,
-          transform: 'translate(0px, 0px)',
-        }}
-        borderRadius={999}
-        border={'1px solid #565656'}
-        gap={1}
-      >
-        <PersonOutlined sx={{ fontSize: '14px', color: 'white' }} />
+    <Stack justifyContent={'space-between'} gap={4}>
+      <SectionHeader icon={PersonOutlined} title={'about'} width={120}>
         <Typography
-          fontWeight={300}
-          textTransform={'uppercase'}
           color={'white'}
-          fontSize={12}
+          variant={'h2'}
+          fontSize={{ xs: 38, md: 48 }}
+          lineHeight={{ xs: 1.4, md: '60px' }}
+          fontWeight={300}
+          letterSpacing={-0.2}
         >
-          About
+          Every great design begin with an even
+          <span style={{ color: '#28e98c' }}> better story</span>
         </Typography>
-      </Stack>
+      </SectionHeader>
       <Typography
-        color={'white'}
-        variant={'h2'}
-        fontSize={48}
-        lineHeight={'60px'}
-        fontWeight={300}
-        letterSpacing={-0.2}
-      >
-        Every great design begin with an even better story
-      </Typography>
-      <Typography
-        color={'white'}
+        color={'#999999'}
         component={'p'}
         fontSize={16}
         lineHeight={'30px'}

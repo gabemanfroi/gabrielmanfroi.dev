@@ -1,44 +1,47 @@
-import { Stack, Typography } from '@mui/material';
+import { Button, Grid, Stack, Typography } from '@mui/material';
+import { colors } from '@/core/theme/colors';
+import { SomeNumbers } from '@/components/MainContent/SomeNumbers';
+import { SectionHeader } from '@/components/MainContent/SectionHeader';
+import React from 'react';
 import { HomeOutlined } from '@mui/icons-material';
 
 export const Introduce = () => {
   return (
-    <Stack justifyContent={'space-between'}>
-      <Stack
-        alignItems={'center'}
-        justifyContent={'space-evenly'}
-        direction={'row'}
-        width={135}
-        sx={{
-          padding: '9px 20px',
-          opacity: 1,
-          transform: 'translate(0px, 0px)',
-        }}
-        borderRadius={999}
-        border={'1px solid #565656'}
-        gap={1}
-      >
-        <HomeOutlined sx={{ fontSize: '14px', color: 'white' }} />
+    <Grid item container justifyContent={'space-between'} gap={5}>
+      <SectionHeader icon={HomeOutlined} title={'Introduction'}>
         <Typography
-          fontWeight={300}
-          textTransform={'uppercase'}
           color={'white'}
-          fontSize={12}
+          variant={'h1'}
+          fontSize={{ xs: 50, md: 78 }}
+          lineHeight={{ xs: 1.3, md: '90px' }}
+          fontWeight={300}
+          letterSpacing={-0.2}
         >
-          Introduce
+          Hello! I am <span style={{ color: '#28e98c' }}>Gabriel</span>, and
+          welcome to my Portfolio!
         </Typography>
-      </Stack>
-      <Typography
-        color={'white'}
-        variant={'h1'}
-        fontSize={78}
-        lineHeight={'90px'}
-        fontWeight={300}
-        letterSpacing={-0.2}
-      >
-        Hello! I am <span style={{ color: '#28e98c' }}>Gabriel</span>, and
-        welcome to my Portfolio!
-      </Typography>
-    </Stack>
+      </SectionHeader>
+      <Grid item container gap={4}>
+        <Typography fontSize={{ xs: 16 }}>
+          I am a Full Stack Software Engineer passionated by Technology
+        </Typography>
+        <Stack flex={1} justifyContent={'center'}>
+          <Button
+            sx={{
+              alignSelf: 'center',
+              borderRadius: 99999,
+              background: colors.primary,
+              color: 'black',
+              px: {
+                xs: 5,
+              },
+            }}
+          >
+            Check some of my projects
+          </Button>
+        </Stack>
+      </Grid>
+      <SomeNumbers />
+    </Grid>
   );
 };

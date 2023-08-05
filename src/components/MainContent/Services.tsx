@@ -1,36 +1,20 @@
 import { Stack, Typography } from '@mui/material';
-import { Code, PersonOutlined } from '@mui/icons-material';
+import { Code, RoomService } from '@mui/icons-material';
+import { SectionHeader } from '@/components/MainContent/SectionHeader';
 
 export const Services = () => {
   return (
-    <Stack justifyContent={'space-between'}>
-      <Stack
-        alignItems={'center'}
-        justifyContent={'space-evenly'}
-        direction={'row'}
-        width={110}
-        sx={{
-          padding: '9px 20px',
-          opacity: 1,
-          transform: 'translate(0px, 0px)',
-        }}
-        borderRadius={999}
-        border={'1px solid #565656'}
-        gap={1}
-      >
-        <PersonOutlined sx={{ fontSize: '14px', color: 'white' }} />
+    <Stack justifyContent={'space-between'} gap={4}>
+      <SectionHeader icon={RoomService} title={'Services'} width={120}>
         <Typography
-          fontWeight={300}
-          textTransform={'uppercase'}
           color={'white'}
-          fontSize={12}
+          variant={'h1'}
+          fontSize={{ xs: 38, md: 48 }}
+          lineHeight={'60px'}
         >
-          Resume
+          My Services
         </Typography>
-      </Stack>
-      <Typography variant={'h1'} fontSize={48} lineHeight={'60px'}>
-        My Services
-      </Typography>
+      </SectionHeader>
       <Stack p={6} border={'1px solid #565656'} borderRadius={4}>
         <Stack
           direction={'row'}

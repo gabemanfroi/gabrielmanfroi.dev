@@ -3,4 +3,7 @@ export const QUERIES = {
     GET_USER: 'Query@GetUser',
     GET_SOCIAL_NETWORKS: 'Query@GetSocialNetworks',
   },
+  RESUME: {
+    GET_RESUME_ITEMS: 'Query@GetResumeItems',
+  },
 };

@@ -1,51 +1,111 @@
 import { Grid, Stack, Typography } from '@mui/material';
-import { Javascript, PersonOutlined } from '@mui/icons-material';
+import { Code, Javascript } from '@mui/icons-material';
+import { SectionHeader } from '@/components/MainContent/SectionHeader';
+import { colors } from '@/core/theme/colors';
 
 export const Skills = () => {
   return (
-    <Stack justifyContent={'space-between'}>
-      <Stack
-        alignItems={'center'}
-        justifyContent={'space-evenly'}
-        direction={'row'}
-        width={110}
-        sx={{
-          padding: '9px 20px',
-          opacity: 1,
-          transform: 'translate(0px, 0px)',
-        }}
-        borderRadius={999}
-        border={'1px solid #565656'}
-        gap={1}
-      >
-        <PersonOutlined sx={{ fontSize: '14px', color: 'white' }} />
+    <Stack justifyContent={'space-between'} gap={4}>
+      <SectionHeader title={'Skills'} width={120} icon={Code}>
         <Typography
-          fontWeight={300}
-          textTransform={'uppercase'}
           color={'white'}
-          fontSize={12}
+          variant={'h1'}
+          fontSize={{ xs: 38, md: 48 }}
+          lineHeight={'60px'}
         >
-          Skills
+          How I may help you
         </Typography>
-      </Stack>
-      <Typography variant={'h1'} fontSize={48} lineHeight={'60px'}>
-        How I may help you
-      </Typography>
-      <Grid container justifyContent={'flex-start'} gap={4}>
+      </SectionHeader>
+      <Grid container flexWrap={'wrap'} justifyContent={'flex-start'} gap={4}>
         <Grid
           gap={'29px'}
           container
           direction={'column'}
           item
-          xs={2.5}
+          xs={5}
+          md={2.5}
           border={'2px solid #565656'}
           borderRadius={'85px'}
           p={'54px 0 48px 0'}
           alignItems={'center'}
           justifyContent={'space-around'}
         >
-          <Javascript sx={{ fontSize: '40px' }} />
-          <Typography fontSize={30}>90%</Typography>
+          <Javascript sx={{ fontSize: '70px' }} />
+          <Typography fontSize={30} color={colors.primary}>
+            90%
+          </Typography>
+        </Grid>
+        <Grid
+          gap={'29px'}
+          container
+          direction={'column'}
+          item
+          xs={5}
+          md={2.5}
+          border={'2px solid #565656'}
+          borderRadius={'85px'}
+          p={'54px 0 48px 0'}
+          alignItems={'center'}
+          justifyContent={'space-around'}
+        >
+          <Javascript sx={{ fontSize: '70px' }} />
+          <Typography fontSize={30} color={colors.primary}>
+            90%
+          </Typography>
+        </Grid>
+        <Grid
+          gap={'29px'}
+          container
+          direction={'column'}
+          item
+          xs={5}
+          md={2.5}
+          border={'2px solid #565656'}
+          borderRadius={'85px'}
+          p={'54px 0 48px 0'}
+          alignItems={'center'}
+          justifyContent={'space-around'}
+        >
+          <Javascript sx={{ fontSize: '70px' }} />
+          <Typography fontSize={30} color={colors.primary}>
+            90%
+          </Typography>
+        </Grid>
+        <Grid
+          gap={'29px'}
+          container
+          direction={'column'}
+          item
+          xs={5}
+          md={2.5}
+          border={'2px solid #565656'}
+          borderRadius={'85px'}
+          p={'54px 0 48px 0'}
+          alignItems={'center'}
+          justifyContent={'space-around'}
+        >
+          <Javascript sx={{ fontSize: '70px' }} />
+          <Typography fontSize={30} color={colors.primary}>
+            90%
+          </Typography>
+        </Grid>
+        <Grid
+          gap={'29px'}
+          container
+          direction={'column'}
+          item
+          xs={5}
+          md={2.5}
+          border={'2px solid #565656'}
+          borderRadius={'85px'}
+          p={'54px 0 48px 0'}
+          alignItems={'center'}
+          justifyContent={'space-around'}
+        >
+          <Javascript sx={{ fontSize: '70px' }} />
+          <Typography fontSize={30} color={colors.primary}>
+            90%
+          </Typography>
         </Grid>
       </Grid>
     </Stack>

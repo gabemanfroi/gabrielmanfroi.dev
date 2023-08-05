@@ -5,12 +5,8 @@ const userService = () => {
     return Axios.get('/gabriel-portfolio-users/1?populate=*');
   };
 
-  const getSocialNetworks = async () =>
-    Axios.get('/gabriel-portfolio-social-networks');
-
   return {
     getUser,
-    getSocialNetworks,
   };
 };
 

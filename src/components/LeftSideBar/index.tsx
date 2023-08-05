@@ -15,22 +15,38 @@ export const LeftSideBar = () => {
       width={'100%'}
       borderRadius={8}
       style={{ border: '1px solid #565656' }}
-      p={6}
+      p={{ xs: 5 }}
     >
       <Grid
         flex={1}
         direction={'column'}
-        gap={2}
         item
         container
-        justifyContent={'space-evenly'}
+        justifyContent={'space-between'}
       >
-        <Header />
-        <ProfilePicture />
-        <EmailAndLocation />
-        <Reserved />
-        <SocialNetworks />
-        <ContactButton />
+        <Grid
+          item
+          container
+          direction={'column'}
+          justifyContent={'space-between'}
+          gap={2}
+        >
+          <Header />
+          <ProfilePicture />
+        </Grid>
+        <Grid
+          item
+          container
+          direction={'column'}
+          justifyContent={'space-between'}
+          flex={1}
+          gap={4}
+        >
+          <EmailAndLocation />
+          <Reserved />
+          <SocialNetworks />
+          <ContactButton />
+        </Grid>
       </Grid>
     </Grid>
   );

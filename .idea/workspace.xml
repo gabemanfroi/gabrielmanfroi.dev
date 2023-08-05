@@ -4,27 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks.item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/theme/colors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/theme/theme.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/types/SocialNetwork.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/types/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/queries/useQuerySocialNetworks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":hammer: starts consuming api data">
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Resume.timeline.item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Resume.timeline.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/SectionHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/SomeNumbers.item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/types/ResumeItems.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/useQueryResumeItems.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/resumeService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/socialNetworkService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/ContactButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/ContactButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/EmailAndLocation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/EmailAndLocation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/ProfilePicture.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/ProfilePicture.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/Reserved.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Reserved.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/SomeNumbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/SomeNumbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/constants/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants/queries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/utils/http/Axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utils/http/Axios.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/queries/useQueryUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/useQueryUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/useQuerySocialNetworks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/useQuerySocialNetworks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/userService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/userService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +41,8 @@
         <option value="HomeContainer" />
         <option value="CSS File" />
         <option value="Vue Single File Component" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -48,6 +51,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,7 +88,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/gabriel.manfroi/gabriel/gabrielmanfroi/front/node_modules/prettier&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/gabriel.manfroi/gabriel/gabrielmanfroi/front/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -110,8 +116,67 @@
       <workItem from="1690833470095" duration="2421000" />
       <workItem from="1690836079461" duration="12748000" />
       <workItem from="1690910956938" duration="7013000" />
-      <workItem from="1691006197483" duration="8238000" />
+      <workItem from="1691006197483" duration="8720000" />
+      <workItem from="1691020025016" duration="2287000" />
+      <workItem from="1691162684452" duration="14402000" />
     </task>
+    <task id="LOCAL-00001" summary="🏗updates config files">
+      <created>1691016279598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016279598</updated>
+    </task>
+    <task id="LOCAL-00002" summary="🎨adds stlye related files">
+      <created>1691016346825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016346825</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":hammer: starts consuming data from api">
+      <created>1691016371463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016371463</updated>
+    </task>
+    <task id="LOCAL-00004" summary=":recycle: minor refactoring">
+      <created>1691016388389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016388390</updated>
+    </task>
+    <task id="LOCAL-00005" summary=":hammer: adds theme">
+      <created>1691016394599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016394599</updated>
+    </task>
+    <task id="LOCAL-00006" summary=":hammer: starts consuming api data">
+      <created>1691016406744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016406744</updated>
+    </task>
+    <task id="LOCAL-00007" summary=":hammer: starts consuming api data">
+      <created>1691016411504</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016411504</updated>
+    </task>
+    <task id="LOCAL-00008" summary=":hammer: starts consuming api data">
+      <created>1691016420294</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691016420294</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +184,25 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updates config files" />
+    <MESSAGE value="adds stlye related files" />
+    <MESSAGE value=":hammer: starts consuming data from api" />
+    <MESSAGE value=":recycle: minor refactoring" />
+    <MESSAGE value=":hammer: adds theme" />
+    <MESSAGE value=":hammer: starts consuming api data" />
+    <option name="LAST_COMMIT_MESSAGE" value=":hammer: starts consuming api data" />
   </component>
 </project>

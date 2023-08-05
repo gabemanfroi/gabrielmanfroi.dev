@@ -9,7 +9,7 @@ export const ProfilePicture = () => {
   if (getUserByNameLoading) return <></>;
 
   return (
-    <Grid item xs={5} maxHeight={'300px'}>
+    <Grid item xs={5} maxHeight={'300px'} p={{ xs: 3 }} pt={{ xs: 0 }}>
       <Image
         src={`${process.env.NEXT_PUBLIC_STRAPI_HOST}${getUserByNameData.data.attributes.profilePicture.data.attributes.url}`}
         alt={'something'}
