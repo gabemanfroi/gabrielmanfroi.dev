@@ -6,4 +6,7 @@ export const QUERIES = {
   RESUME: {
     GET_RESUME_ITEMS: 'Query@GetResumeItems',
   },
+  PROJECTS: {
+    GET_PROJECTS: 'Query@GetProjects',
+  },
 };

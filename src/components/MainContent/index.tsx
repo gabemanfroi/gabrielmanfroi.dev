@@ -4,6 +4,7 @@ import { About } from '@/components/MainContent/About';
 import { Resume } from '@/components/MainContent/Resume';
 import { Services } from '@/components/MainContent/Services';
 import { Skills } from '@/components/MainContent/Skills';
+import { Portfolio } from '@/components/MainContent/Portfolio';
 
 export const MainContent = () => {
   return (
@@ -14,6 +15,7 @@ export const MainContent = () => {
         <Resume />
         <Services />
         <Skills />
+        <Portfolio />
       </Stack>
     </Grid>
   );

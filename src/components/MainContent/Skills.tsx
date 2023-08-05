@@ -13,7 +13,7 @@ export const Skills = () => {
           fontSize={{ xs: 38, md: 48 }}
           lineHeight={'60px'}
         >
-          How I may help you
+          How I may <span style={{ color: colors.primary }}> help you</span>
         </Typography>
       </SectionHeader>
       <Grid container flexWrap={'wrap'} justifyContent={'flex-start'} gap={4}>

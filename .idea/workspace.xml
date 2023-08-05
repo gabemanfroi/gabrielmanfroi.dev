@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment="📱improves responsiveness of left sidebar">
+    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment="📱improves responsiveness of section headers">
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Portfolio.projects.item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Portfolio.projects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainContent/Portfolio.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/types/Image.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/types/Project.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/useQueryProjects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/projectsService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Introduce.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Resume.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainContent/SectionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/SectionHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Services.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContent/SomeNumbers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/SomeNumbers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/constants/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/types/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/types/User.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,7 @@
       <workItem from="1691006197483" duration="8720000" />
       <workItem from="1691020025016" duration="2287000" />
       <workItem from="1691162684452" duration="14811000" />
-      <workItem from="1691233245319" duration="3302000" />
+      <workItem from="1691233245319" duration="11152000" />
     </task>
     <task id="LOCAL-00001" summary="🏗updates config files">
       <created>1691016279598</created>
@@ -177,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691234508069</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="📱improves responsiveness of section headers">
+      <created>1691236641916</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691236641916</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +215,7 @@
     <MESSAGE value=":hammer: adds theme" />
     <MESSAGE value=":hammer: starts consuming api data" />
     <MESSAGE value="improves responsiveness of left sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="improves responsiveness of left sidebar" />
+    <MESSAGE value="improves responsiveness of section headers" />
+    <option name="LAST_COMMIT_MESSAGE" value="improves responsiveness of section headers" />
   </component>
 </project>

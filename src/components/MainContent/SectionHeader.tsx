@@ -39,7 +39,7 @@ export const SectionHeader = ({ children, icon, title, width }: Props) => {
           {title}
         </Typography>
       </Grid>
-      <Grid item container xs={12}>
+      <Grid item container xs={12} sx={{ textTransform: 'capitalize' }}>
         {children}
       </Grid>
     </Grid>
