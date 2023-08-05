@@ -1,8 +1,9 @@
-import { Grid, Stack, Typography } from '@mui/material';
-import { Code, Javascript } from '@mui/icons-material';
+import { Stack, Typography } from '@mui/material';
+import { Code } from '@mui/icons-material';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
 import { colors } from '@/core/theme/colors';
 import { useRefsContext } from '@/providers/refsProvider';
+import { SkillsItems } from '@/components/MainContent/Skills.items';
 
 export const Skills = () => {
   const { skillsRef } = useRefsContext();
@@ -18,98 +19,7 @@ export const Skills = () => {
           How I may <span style={{ color: colors.primary }}> help you</span>
         </Typography>
       </SectionHeader>
-      <Grid container flexWrap={'wrap'} justifyContent={'flex-start'} gap={4}>
-        <Grid
-          gap={'29px'}
-          container
-          direction={'column'}
-          item
-          xs={5}
-          md={2.5}
-          border={'2px solid #565656'}
-          borderRadius={'85px'}
-          p={'54px 0 48px 0'}
-          alignItems={'center'}
-          justifyContent={'space-around'}
-        >
-          <Javascript sx={{ fontSize: '70px' }} />
-          <Typography fontSize={30} color={colors.primary}>
-            90%
-          </Typography>
-        </Grid>
-        <Grid
-          gap={'29px'}
-          container
-          direction={'column'}
-          item
-          xs={5}
-          md={2.5}
-          border={'2px solid #565656'}
-          borderRadius={'85px'}
-          p={'54px 0 48px 0'}
-          alignItems={'center'}
-          justifyContent={'space-around'}
-        >
-          <Javascript sx={{ fontSize: '70px' }} />
-          <Typography fontSize={30} color={colors.primary}>
-            90%
-          </Typography>
-        </Grid>
-        <Grid
-          gap={'29px'}
-          container
-          direction={'column'}
-          item
-          xs={5}
-          md={2.5}
-          border={'2px solid #565656'}
-          borderRadius={'85px'}
-          p={'54px 0 48px 0'}
-          alignItems={'center'}
-          justifyContent={'space-around'}
-        >
-          <Javascript sx={{ fontSize: '70px' }} />
-          <Typography fontSize={30} color={colors.primary}>
-            90%
-          </Typography>
-        </Grid>
-        <Grid
-          gap={'29px'}
-          container
-          direction={'column'}
-          item
-          xs={5}
-          md={2.5}
-          border={'2px solid #565656'}
-          borderRadius={'85px'}
-          p={'54px 0 48px 0'}
-          alignItems={'center'}
-          justifyContent={'space-around'}
-        >
-          <Javascript sx={{ fontSize: '70px' }} />
-          <Typography fontSize={30} color={colors.primary}>
-            90%
-          </Typography>
-        </Grid>
-        <Grid
-          gap={'29px'}
-          container
-          direction={'column'}
-          item
-          xs={5}
-          md={2.5}
-          border={'2px solid #565656'}
-          borderRadius={'85px'}
-          p={'54px 0 48px 0'}
-          alignItems={'center'}
-          justifyContent={'space-around'}
-        >
-          <Javascript sx={{ fontSize: '70px' }} />
-          <Typography fontSize={30} color={colors.primary}>
-            90%
-          </Typography>
-        </Grid>
-      </Grid>
+      <SkillsItems />
     </Stack>
   );
 };

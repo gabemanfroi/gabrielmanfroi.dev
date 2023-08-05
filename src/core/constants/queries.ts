@@ -9,4 +9,7 @@ export const QUERIES = {
   PROJECTS: {
     GET_PROJECTS: 'Query@GetProjects',
   },
+  SKILLS: {
+    GET_SKILLS: 'Query@GetSkills',
+  },
 };
