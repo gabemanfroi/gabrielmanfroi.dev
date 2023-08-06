@@ -28,7 +28,7 @@ export const Introduction = () => {
   const hasToAnimate = sectionToAnimate === introductionRef;
 
   useEffect(() => {
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 768) {
       gridStylesApi.start({
         opacity: 1,
         config: {
@@ -37,7 +37,7 @@ export const Introduction = () => {
       });
       typographyStylesApi.start({
         opacity: 1,
-        x: 500,
+        x: 0,
         config: {
           duration: 500,
         },
