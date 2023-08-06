@@ -7,7 +7,7 @@ export const SomeNumbers = () => {
       <SomeNumbersItem moreThan={4} description={'Years of Experience'} />
       <SomeNumbersItem
         flex={1}
-        moreThan={182}
+        moreThan={60}
         description={'Projects Completed'}
       />
     </Stack>
