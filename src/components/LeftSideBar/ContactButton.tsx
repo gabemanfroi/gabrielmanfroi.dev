@@ -16,6 +16,12 @@ export const ContactButton = () => {
           display: 'flex',
           gap: '8px',
         }}
+        onClick={() => {
+          window.open(
+            "mailto:gabriel@gabrielmanfroi.dev?Subject=Let's Talk",
+            '_blank',
+          );
+        }}
       >
         <EmailOutlined />
         <Typography>Contact me!</Typography>
