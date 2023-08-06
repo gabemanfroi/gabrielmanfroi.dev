@@ -45,12 +45,12 @@ export const About = () => {
         lineHeight={'30px'}
         fontWeight={400}
       >
-        Since beginning my journey as a freelance designer nearly 8 years ago,
-        I&apos;ve done remote work for agencies, consulted for startups, and
-        collaborated with talented people to create digital products for both
-        business and consumer use. I&apos;m quietly confident, naturally
-        curious, and perpetually working on improving my chopsone design problem
-        at a time.
+        My skills as a Full Stack Software Engineer and user experience are well
+        developed. In addition to a broad interest in computer Problem Solving
+        and new technologies. I&apos;m a hard worker, I like challenges, I try
+        my best in everything I do, and I learn fast. As an aspiring person with
+        the ability of self motivation and organization I always aim to complete
+        all the tasks and goals assigned to me.
       </Typography>
     </AnimatedStack>
   );
