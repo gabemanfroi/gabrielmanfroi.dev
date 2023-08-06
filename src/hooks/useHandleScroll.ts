@@ -6,7 +6,6 @@ export const useHandleScroll = () => {
     introductionRef,
     skillsRef,
     portfolioRef,
-    serviceRef,
     aboutRef,
     resumeRef,
     setActiveSection,
@@ -22,7 +21,6 @@ export const useHandleScroll = () => {
       resumeRef,
       skillsRef,
       portfolioRef,
-      serviceRef,
     ]) {
       const rect = ref.current?.getBoundingClientRect();
       if (
@@ -31,11 +29,6 @@ export const useHandleScroll = () => {
         (rect.bottom <= mainContentRect.bottom &&
           rect.bottom >= mainContentRect.bottom / 2)
       ) {
-        console.log({
-          rect: rect.top,
-          mainContentRect: mainContentRect.bottom / 2,
-        });
-
         setActiveSection(ref);
         break;
       }
@@ -47,7 +40,6 @@ export const useHandleScroll = () => {
     resumeRef,
     skillsRef,
     portfolioRef,
-    serviceRef,
     setActiveSection,
   ]);
 

@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":recycle: removes unused section">
+      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/FloatingButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.socialNetworks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/refsProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/refsProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useHandleScroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useHandleScroll.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
         <option value="HomeContainer" />
         <option value="CSS File" />
         <option value="Vue Single File Component" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -98,7 +105,7 @@
       <workItem from="1691006197483" duration="8720000" />
       <workItem from="1691020025016" duration="2287000" />
       <workItem from="1691162684452" duration="14811000" />
-      <workItem from="1691233245319" duration="26492000" />
+      <workItem from="1691233245319" duration="31079000" />
     </task>
     <task id="LOCAL-00001" summary="🏗updates config files">
       <created>1691016279598</created>
@@ -219,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691277718656</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=":recycle: removes unused section">
+      <created>1691277876260</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691277876260</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

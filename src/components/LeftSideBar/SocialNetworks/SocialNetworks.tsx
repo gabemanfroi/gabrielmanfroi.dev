@@ -20,6 +20,7 @@ export const SocialNetworks = () => {
     <Grid item container direction={'row'} justifyContent={'center'} gap={1}>
       {getSocialNetworksData.data.map((s) => (
         <SocialNetworksItem
+          renderBorder={true}
           key={s.attributes.url}
           url={s.attributes.url}
           icon={ICON_BY_CATEGORY[s.attributes.category]}

@@ -4,20 +4,20 @@ import { OverridableComponent } from '@mui/types';
 import Link from 'next/link';
 import { colors } from '@/core/theme/colors';
 
-export const SocialNetworksItem = ({
-  url,
-  icon,
-}: {
+interface Props {
   url: string;
   icon: OverridableComponent<SvgIconTypeMap> & { muiName: string };
-}) => {
+  renderBorder: boolean;
+}
+
+export const SocialNetworksItem = ({ url, icon, renderBorder }: Props) => {
   const IconComponent = icon;
   return (
     <Stack justifyContent={'center'} alignItems={'center'}>
       <Link href={url} target="_blank">
         <IconButton
           sx={{
-            border: `2px solid ${colors.gray.dark}`,
+            border: renderBorder ? `2px solid ${colors.gray.dark}` : '',
             color: '#999999',
             transition: 'all ease-in-out 0.2s',
             '&:hover': {
