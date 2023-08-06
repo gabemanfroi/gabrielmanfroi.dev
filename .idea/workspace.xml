@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":recycle: removes unused section">
-      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/FloatingButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.socialNetworks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.tsx" afterDir="false" />
+    <list default="true" id="5d0a441c-b97c-4872-9cd6-09f52ec4c18d" name="Changes" comment=":hammer: adds transitions">
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSectionEnteredView.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/SocialNetworks/SocialNetworks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSideBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Introduction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Introduction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Portfolio/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Portfolio/Portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Resume/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Resume/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/SectionHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/SectionHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/Skills/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar/FloatingButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar/FloatingButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSidebar/RightSidebar.dialog.item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/types/Image.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/types/Image.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/types/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/types/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/useQuerySocialNetworks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/useQuerySocialNetworks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/useQueryUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/useQueryUser.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useHandleScroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useHandleScroll.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/refsProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/refsProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +115,7 @@
       <workItem from="1691006197483" duration="8720000" />
       <workItem from="1691020025016" duration="2287000" />
       <workItem from="1691162684452" duration="14811000" />
-      <workItem from="1691233245319" duration="31079000" />
+      <workItem from="1691233245319" duration="40230000" />
     </task>
     <task id="LOCAL-00001" summary="🏗updates config files">
       <created>1691016279598</created>
@@ -233,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691277876260</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=":hammer: adds dialog sidebar for mobile">
+      <created>1691282485114</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691282485114</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +284,8 @@
     <MESSAGE value=":hammer: adds right sidebar" />
     <MESSAGE value=":hammer: starts consuming skill api" />
     <MESSAGE value=":recycle: removes unused section" />
-    <option name="LAST_COMMIT_MESSAGE" value=":recycle: removes unused section" />
+    <MESSAGE value=":hammer: adds dialog sidebar for mobile" />
+    <MESSAGE value=":hammer: adds transitions" />
+    <option name="LAST_COMMIT_MESSAGE" value=":hammer: adds transitions" />
   </component>
 </project>

@@ -20,8 +20,7 @@ export const FloatingButton = () => {
         borderRadius="50%"
         zIndex={3}
         sx={{
-          backgroundColor: '#1f1f1f',
-          background: '#565656',
+          background: '#111',
           visibility: { xs: 'visible', md: 'hidden' },
         }}
         onClick={(e) => {

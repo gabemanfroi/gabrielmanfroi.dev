@@ -24,6 +24,7 @@ export const RightSidebarDialogItem = ({
   const onClick = () => {
     setIsActive(false);
     setActiveSection(sectionRef);
+    setActiveSection(sectionRef);
     scrollToRef();
   };
   const isActive = activeSection === sectionRef;

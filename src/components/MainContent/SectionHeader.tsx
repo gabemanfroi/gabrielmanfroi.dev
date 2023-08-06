@@ -20,7 +20,7 @@ export const SectionHeader = ({ children, icon, title, width }: Props) => {
         alignItems={'center'}
         justifyContent={'space-evenly'}
         direction={'row'}
-        maxWidth={width ?? { xs: '50%', md: '20%' }}
+        maxWidth={width ?? { xs: '50%', md: '22%' }}
         sx={{
           padding: '9px 20px',
           opacity: 1,

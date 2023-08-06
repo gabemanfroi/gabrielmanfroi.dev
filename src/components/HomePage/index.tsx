@@ -20,6 +20,11 @@ export const HomePage = () => {
         height={'100%'}
         overflow={{ xs: 'scroll', lg: 'hidden' }}
         position="relative"
+        onScroll={() => {
+          if (window.innerWidth < 768) {
+            handleScroll();
+          }
+        }}
       >
         <Grid
           top={0}

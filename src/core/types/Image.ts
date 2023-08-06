@@ -3,13 +3,13 @@ type ImageBase = {
 };
 
 type ImageAttributes = {
-  id: number;
+  id?: number;
   attributes: ImageBase & {
-    formats: {
-      large: ImageBase;
-      small: ImageBase;
-      medium: ImageBase;
-      thumbnail: ImageBase;
+    formats?: {
+      large?: ImageBase;
+      small?: ImageBase;
+      medium?: ImageBase;
+      thumbnail?: ImageBase;
     };
   };
 };

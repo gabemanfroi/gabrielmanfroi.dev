@@ -6,15 +6,31 @@ import { EmailAndLocation } from '@/components/LeftSideBar/EmailAndLocation';
 import { SocialNetworks } from '@/components/LeftSideBar/SocialNetworks/SocialNetworks';
 import { ContactButton } from '@/components/LeftSideBar/ContactButton';
 import { Reserved } from '@/components/LeftSideBar/Reserved';
+import { animated, useSpring } from '@react-spring/web';
 
 export const LeftSideBar = () => {
+  const AnimatedGrid = animated(Grid);
+
+  const styles = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: {
+      opacity: 1,
+    },
+    config: {
+      duration: 500,
+    },
+  });
+
   return (
-    <Grid
+    <AnimatedGrid
+      style={styles}
       item
       container
       width={'100%'}
       borderRadius={8}
-      style={{ border: '1px solid #565656' }}
+      sx={{ border: '1px solid #565656' }}
       p={{ xs: 5 }}
     >
       <Grid
@@ -48,6 +64,6 @@ export const LeftSideBar = () => {
           <ContactButton />
         </Grid>
       </Grid>
-    </Grid>
+    </AnimatedGrid>
   );
 };

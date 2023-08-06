@@ -1,22 +1,18 @@
 import { useCallback, useEffect } from 'react';
 import { useRefsContext } from '@/providers/refsProvider';
-import { useSectionEnteredView } from '@/hooks/useSectionEnteredView';
 
-export const useHandleScroll = () => {
+export const useSectionEnteredView = () => {
   const {
     introductionRef,
     skillsRef,
     portfolioRef,
     aboutRef,
     resumeRef,
-    setActiveSection,
+    setSectionToAnimate,
     mainContentRef,
   } = useRefsContext();
 
-  const handleHasToAnimate = useSectionEnteredView();
-
-  const handleScroll = useCallback(() => {
-    handleHasToAnimate();
+  const handleSectionToAnimate = useCallback(() => {
     const mainContentRect = mainContentRef.current?.getBoundingClientRect();
 
     for (const ref of [
@@ -27,30 +23,26 @@ export const useHandleScroll = () => {
       portfolioRef,
     ]) {
       const rect = ref.current?.getBoundingClientRect();
-      if (
-        (rect.top >= mainContentRect.top &&
-          rect.top <= mainContentRect.bottom / 2) ||
-        (rect.bottom <= mainContentRect.bottom &&
-          rect.bottom >= mainContentRect.bottom / 2)
-      ) {
-        setActiveSection(ref);
+      const bottom =
+        window.innerWidth <= 768 ? window.innerHeight : mainContentRect.bottom;
+      if (rect.top <= bottom / 1.1 && rect.top >= bottom / 2) {
+        setSectionToAnimate(ref);
         break;
       }
     }
   }, [
-    handleHasToAnimate,
     mainContentRef,
     introductionRef,
     aboutRef,
     resumeRef,
     skillsRef,
     portfolioRef,
-    setActiveSection,
+    setSectionToAnimate,
   ]);
 
   useEffect(() => {
-    handleScroll();
-  }, [handleScroll]);
+    handleSectionToAnimate();
+  }, [handleSectionToAnimate]);
 
-  return handleScroll;
+  return handleSectionToAnimate;
 };

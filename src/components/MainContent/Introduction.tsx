@@ -2,17 +2,68 @@ import { Button, Grid, Typography } from '@mui/material';
 import { colors } from '@/core/theme/colors';
 import { SomeNumbers } from '@/components/MainContent/SomeNumbers/SomeNumbers';
 import { SectionHeader } from '@/components/MainContent/SectionHeader';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HomeOutlined } from '@mui/icons-material';
 import { useRefsContext } from '@/providers/refsProvider';
+import { animated, useSpring } from '@react-spring/web';
 
 export const Introduction = () => {
-  const { portfolioRef, introductionRef } = useRefsContext();
+  const { portfolioRef, introductionRef, sectionToAnimate } = useRefsContext();
   const handleScrollToPortfoliosSection = () => {
     portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const AnimatedGrid = animated(Grid);
+  const [gridStyles, gridStylesApi] = useSpring(() => ({
+    opacity: 0,
+  }));
+
+  const [typographyStyles, typographyStylesApi] = useSpring(() => ({
+    opacity: 0,
+    x: 500,
+  }));
+
+  const AnimatedTypography = animated(Typography);
+
+  const hasToAnimate = sectionToAnimate === introductionRef;
+
+  useEffect(() => {
+    if (window.innerWidth > 767) {
+      gridStylesApi.start({
+        opacity: 1,
+        config: {
+          duration: 500,
+        },
+      });
+      typographyStylesApi.start({
+        opacity: 1,
+        x: 500,
+        config: {
+          duration: 500,
+        },
+      });
+    }
+  }, [gridStylesApi, typographyStylesApi]);
+
+  if (hasToAnimate) {
+    gridStylesApi.start({
+      opacity: 1,
+      config: {
+        duration: 500,
+      },
+    });
+    typographyStylesApi.start({
+      opacity: 1,
+      x: 0,
+      config: {
+        duration: 500,
+      },
+    });
+  }
+
   return (
-    <Grid
+    <AnimatedGrid
+      style={gridStyles}
       item
       container
       justifyContent={'space-between'}
@@ -20,7 +71,8 @@ export const Introduction = () => {
       ref={introductionRef}
     >
       <SectionHeader icon={HomeOutlined} title={'Introduction'}>
-        <Typography
+        <AnimatedTypography
+          style={typographyStyles}
           color={'white'}
           variant={'h1'}
           fontSize={{ xs: 50, md: 78 }}
@@ -30,14 +82,14 @@ export const Introduction = () => {
         >
           Hello! I am <span style={{ color: '#28e98c' }}>Gabriel</span>, and
           welcome to my Portfolio!
-        </Typography>
+        </AnimatedTypography>
       </SectionHeader>
       <Grid item container gap={4}>
-        <Grid item container xs={8}>
-          <Typography fontSize={{ xs: 16 }}>
+        <Grid item container xs={12}>
+          <AnimatedTypography style={typographyStyles} fontSize={{ xs: 16 }}>
             I am a Full Stack Software Engineer passionated by Technology and a
             lifetime learner.
-          </Typography>
+          </AnimatedTypography>
         </Grid>
         <Grid item container xs={12} justifyContent={{ xs: 'flex-end' }}>
           <Button
@@ -57,6 +109,6 @@ export const Introduction = () => {
         </Grid>
       </Grid>
       <SomeNumbers />
-    </Grid>
+    </AnimatedGrid>
   );
 };

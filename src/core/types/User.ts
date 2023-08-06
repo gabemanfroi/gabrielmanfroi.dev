@@ -2,7 +2,7 @@ import { ImageData } from '@/core/types/Image';
 
 export interface User {
   data: {
-    id: number;
+    id?: number;
     attributes: {
       name: string;
       email: string;

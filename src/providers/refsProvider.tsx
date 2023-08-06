@@ -18,6 +18,8 @@ interface RefsContext {
   portfolioRef: MutableRefObject<any>;
   activeSection: MutableRefObject<any> | null;
   setActiveSection: Dispatch<SetStateAction<MutableRefObject<any> | null>>;
+  setSectionToAnimate: Dispatch<SetStateAction<MutableRefObject<any> | null>>;
+  sectionToAnimate: MutableRefObject<any> | null;
   mainContentRef: MutableRefObject<any>;
 }
 
@@ -37,6 +39,8 @@ export const RefsProvider = ({ children }: Props) => {
 
   const [activeSection, setActiveSection] =
     useState<MutableRefObject<any> | null>(null);
+  const [sectionToAnimate, setSectionToAnimate] =
+    useState<MutableRefObject<any> | null>(null);
 
   const value = useMemo(
     () => ({
@@ -48,6 +52,8 @@ export const RefsProvider = ({ children }: Props) => {
       activeSection,
       setActiveSection,
       mainContentRef,
+      sectionToAnimate,
+      setSectionToAnimate,
     }),
     [
       introductionRef,
@@ -58,6 +64,8 @@ export const RefsProvider = ({ children }: Props) => {
       activeSection,
       mainContentRef,
       setActiveSection,
+      sectionToAnimate,
+      setSectionToAnimate,
     ],
   );
   return <RefsContext.Provider value={value}>{children}</RefsContext.Provider>;
