@@ -11,8 +11,8 @@ export const MainContent = () => {
       <Stack justifyContent={'space-between'} gap={7}>
         <Introduction />
         <About />
-        <Resume />
         <Skills />
+        <Resume />
         <Portfolio />
       </Stack>
     </Grid>

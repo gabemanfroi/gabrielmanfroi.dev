@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       {/* Add the favicon */}
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Gabriel&apos;s Portfolio</title>
+        <title>{'<GabrielManfroi />'}</title>
       </Head>
       {/* Add the favicon */}
       {/* Note that the path doesn't include "public" */}
