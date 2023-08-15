@@ -30,7 +30,8 @@ export const HomePage = () => {
           top={0}
           left={0}
           height={{ lg: '100%' }}
-          px={{ xs: 0, md: 3 }}
+          px={{ xs: 0, md: 3, lg: 0 }}
+          pl={{ lg: 3 }}
           py={{ xs: 0, md: 4, lg: 12 }}
           position={{ lg: 'absolute' }}
           item
