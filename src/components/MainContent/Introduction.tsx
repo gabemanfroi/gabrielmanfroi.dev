@@ -104,7 +104,7 @@ export const Introduction = () => {
               },
             }}
           >
-            Check some of the projects I&aps;ve worked on
+            Check some of the projects I&apos;ve worked on
           </Button>
         </Grid>
       </Grid>

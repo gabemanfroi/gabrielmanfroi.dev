@@ -2,6 +2,7 @@
 import '../styles/globals.css';
 
 // import the Head component for appending elements to the head of the page
+import Script from 'next/script';
 import Head from 'next/head';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -15,13 +16,21 @@ const queryClient = new QueryClient();
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* Add the favicon */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-Y1N1EGM62B"
+      ></Script>
+      <Script id="ga" strategy="lazyOnload">
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Y1N1EGM62B');`}
+      </Script>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>{'<GabrielManfroi />'}</title>
       </Head>
-      {/* Add the favicon */}
-      {/* Note that the path doesn't include "public" */}
       <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={theme}>
           <RefsProvider>
