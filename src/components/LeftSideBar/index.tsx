@@ -32,7 +32,6 @@ export const LeftSideBar = () => {
       borderRadius={8}
       sx={{ border: '1px solid #565656' }}
       p={{ xs: 5 }}
-      maxHeight={150}
     >
       <Grid
         flex={1}

@@ -42,6 +42,7 @@ export const HomePage = () => {
           xs={12}
           lg={4.2}
           xl={3}
+          maxHeight={150}
         >
           <LeftSideBar />
         </Grid>
