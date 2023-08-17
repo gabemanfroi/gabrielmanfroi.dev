@@ -17,6 +17,8 @@ export const HomePage = () => {
         px={{ xs: 0, md: 3 }}
         py={{ xs: 0, md: 4, lg: 12 }}
         gap={{ xs: 7, md: 13, xl: 30 }}
+        margin={'0 auto'}
+        maxWidth={1700}
         height={'100%'}
         overflow={{ xs: 'scroll', lg: 'hidden' }}
         position="relative"
