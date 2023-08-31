@@ -30,10 +30,12 @@ export const LeftSideBar = () => {
       container
       width={'100%'}
       borderRadius={8}
+      zIndex={2}
       sx={{ border: '1px solid #565656' }}
       p={{ xs: 5 }}
     >
       <Grid
+        zIndex={2}
         flex={1}
         direction={'column'}
         item
